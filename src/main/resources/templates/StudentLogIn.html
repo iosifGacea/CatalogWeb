@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" th:action="@{/StudentHome}" th:object="${student}" method="get">
+  <input type="text" th:field="${student.name}" placeholder="Insert your name:" name="name" id="name"/>
+  <input type="text" th:field="${student.password}" placeholder="Insert your password:" name="password" id="password">
+    <p><input type="submit" value="Submit" />
+  <br><br>
+</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>TEACHER HOME</h1>
+<h3 th:text="${teacher.name} "></h3><br>
+
+<p>Add a grade</p><br>
+<form action="#" th:object="${myTouple}" th:action="@{/TeacherAddGrade}" method="get">
+  <input type="text" th:field="${myTouple.first}" placeholder="student name:" name="s_name" id="s_name"/><br><br>
+  <input type="text" th:field="${myTouple.second}" placeholder="subject:" name="subject" id="subject"><br><br>
+  <input type="text" th:field="${myTouple.third}" placeholder="grade" name="grade" id="grade"><br><br>
+  <p><input type="submit" value="Submit" />
+</form>
+</body>
+</html>

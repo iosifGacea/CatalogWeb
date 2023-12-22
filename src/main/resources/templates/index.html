@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>Choose your role</title>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111111;
+    }
+  </style>
+</head>
+<body>
+<H3>Choose your role</H3>
+<ul>
+  <li><a th:href="@{/StudentLogIn}">Student</a></li>
+  <li><a th:href="@{/TeacherLogIn}">Teacher</a></li>
+</ul>
+</body>
+</html>
